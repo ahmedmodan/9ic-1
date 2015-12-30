@@ -8,7 +8,7 @@ import GenreList from '../components/Genre/GenreList';
 export default (
   <Route path="/" component={Main}>
     <Route path="movie/:id" component={Movie} />
-    <Route path="genre/" component={GenreList} />
+    <Route path="genre" component={GenreList} />
     <IndexRoute component={Home}/>
   </Route>
 );
