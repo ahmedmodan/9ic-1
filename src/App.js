@@ -14,5 +14,5 @@ syncReduxAndRouter(history, store, (state) => state.router);
 // Render the React application to the DOM
 ReactDOM.render(
   <Root history={ history } routes= { routes } store= { store } />,
-  document.getElementById('root')
+  document.getElementById('app')
   );
