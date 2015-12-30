@@ -1,4 +1,3 @@
-import { URLS } from '../../config/config';
 import _ from 'lodash';
 
 let genres = {
