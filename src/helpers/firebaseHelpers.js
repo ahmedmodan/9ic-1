@@ -5,6 +5,8 @@ export const firebaseRef = new Firebase('https://movtin.firebaseio.com')
 
 export const getAuth = firebaseRef.getAuth()
 
+export const logOut = firebaseRef.unauth()
+
 export const facebookLoginPopUp = () => {
   firebaseRef.authWithOAuthPopup('facebook', (error, authData) => {
     if (error) {

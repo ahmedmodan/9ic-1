@@ -1,6 +1,6 @@
 import React from 'react'
 import MovieSearchWidget from '../../components/MovieSearchWidget'
-import { facebookLoginPopUp } from '../../helpers/firebaseHelpers'
+import { facebookLoginPopUp, logOut } from '../../helpers/firebaseHelpers'
 import {
   Link
 }
@@ -45,9 +45,8 @@ export default ({
           <li className="dropdown">
             <a href="#" className="dropdown-toggle" data-toggle="dropdown">Login <b className="caret"></b></a>
             <ul className="dropdown-menu">
-              <li><a href="#" className="active">Action</a></li>
               <li onClick={facebookLoginPopUp}><a href="#"> Login with Facebook </a></li>
-              <li><a href="#">Something else here</a></li>
+              <li onClick={logOut}><a href="#">Log Out</a></li>
               <li><a href="#">Separated link</a></li>
             </ul>
           </li>
