@@ -7,8 +7,8 @@ export default ({title, popularity, overview, poster_path, id}) => {
   }
   return (
    <div className="like-buttons">
-    <a href="#" onClick={saveData('like')} className="btn btn-success">Like</a>
-       <a href="#" onClick={saveData('dislike')} className="btn btn-danger">Dislike</a>
+    <a onClick={saveData('like')} className="btn btn-success">Like</a>
+       <a onClick={saveData('dislike')} className="btn btn-danger">Dislike</a>
    </div>
   )
 }
